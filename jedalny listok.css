@@ -3,7 +3,7 @@
 }
 
 .heading {
-  padding: 5rem;
+  padding: 4rem;
   color: white;
 }
 
@@ -239,6 +239,10 @@ html {
 @media (max-width: 550px) {
   html {
     font-size: 40%;
+  }
+
+  .heading {
+    padding-top: 6rem;
   }
 }
 /* -----------------------------------------------------max width 346px ------------------------------------------------- */
