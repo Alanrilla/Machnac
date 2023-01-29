@@ -235,7 +235,7 @@ html {
   }
 
   .heading {
-    padding-top: 6rem;
+    padding-top: 12rem;
   }
 }
 /* -----------------------------------------------------max width 346px ------------------------------------------------- */
@@ -249,5 +249,9 @@ html {
     letter-spacing: none;
     font-size: 1rem;
     padding: 1rem;
+  }
+
+  .heading {
+    padding-top: 16rem;
   }
 }

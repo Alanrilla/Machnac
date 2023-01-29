@@ -272,7 +272,7 @@ section {
 
 .table-content {
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 25px;
   font-size: 1.5rem;
   min-width: 400px;
   text-align: center;
@@ -635,8 +635,26 @@ section {
     font-size: 40%;
   }
 
-  .table {
+  .table,
+  .table tbody,
+  .table tr,
+  .table td .table th {
     width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 15px;
+  }
+
+  .table td {
+    text-align: center;
+    padding-right: 20%;
+    text-align: center;
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-size: 2.5rem;
   }
 }
 /* -----------------------------------------------------max width 346px ------------------------------------------------- */
@@ -652,11 +670,21 @@ section {
     padding: 1rem;
   }
 
-  .table {
+  /* .table {
     visibility: hidden;
-  }
+  } */
 }
 /* ----------------------------------------------------page on load animatoin --------------------------------------------- */
+
+/* @media (max-width: 470px) {
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    width: 100%;
+    padding-right: 30%;
+  }
+} */
 
 @keyframes nav-load {
   0% {

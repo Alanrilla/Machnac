@@ -179,6 +179,12 @@ h1::before {
     font-size: 40%;
   }
   .heading {
-  margin-top: 100px;
+  margin-top: 140px;
 }
+}
+
+@media (max-width: 350px) {
+  .heading {
+    margin-top: 110px;
+  }
 }
