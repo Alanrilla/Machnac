@@ -640,6 +640,8 @@ section {
   .table tr,
   .table td .table th {
     width: 100%;
+    table-layout: unset;
+    margin: 0;
   }
 
   .table tr {
