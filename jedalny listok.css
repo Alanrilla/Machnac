@@ -48,7 +48,7 @@ h1::before {
   width: 100px;
   height: 3px;
   background-color: var(--light-color);
-  bottom: 73%;
+  bottom: 75%;
   left: 50%;
   transform: translateX(-50%);
   animation: animate 4s linear infinite;
