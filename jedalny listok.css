@@ -38,7 +38,7 @@ html {
 }
 
 .denne-menu .menu-container .item .item-menu {
-  padding: 0.5rem 0;
+  padding: 1.5rem 0;
   animation: content-fade 4s;
 }
 
@@ -48,7 +48,7 @@ h1::before {
   width: 100px;
   height: 3px;
   background-color: var(--light-color);
-  bottom: 75%;
+  bottom: 73%;
   left: 50%;
   transform: translateX(-50%);
   animation: animate 4s linear infinite;
