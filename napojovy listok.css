@@ -13,7 +13,7 @@ html {
   overflow-x: visible;
 }
 
-/* ----------------------------------------------------------denne menu style starts ---------------------------------------------------------------- */
+/* ----------------------------------------------------------denne menu style starts - napojony listok ---------------------------------------------------------------- */
 
 .denne-menu {
   background: url(images/pivo.jpg);
@@ -53,7 +53,8 @@ h1::before {
   width: 100px;
   height: 3px;
   background-color: var(--light-color);
-  bottom: 75%;
+  /* bottom: 75%; */
+  top: 15rem;
   left: 50%;
   transform: translateX(-50%);
   animation: animate 4s linear infinite;
@@ -95,10 +96,18 @@ h1::before {
   text-align: center;
 }
 
+.denne-menu .menu-container .item .item-menu p {
+  font-size: 1.5rem;
+}
+
 .denne-menu .menu-container .item .item-menu span {
   padding: 0 5%;
   font-size: 1.5rem;
 }
+
+/* .denne-menu .menu-container .item .item-menu p {
+
+} */
 
 .denne-menu .menu-container .item .item-menu ul {
   /* display: flex; */
@@ -111,7 +120,7 @@ h1::before {
 .denne-menu .menu-container .item .item-menu ul li a {
   color: #b9b9b9;
 }
-/* --------------------------------------------------------------denne menu style ends  ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------denne menu style ends - napojovy listok  ------------------------------------------------------------------------------------------------ */
 
 /* -----------------------------------------------------------keyframes for animation---------------------------------------------------------- */
 
@@ -221,22 +230,31 @@ html {
   .denne-menu .menu-container { 
   padding: 3rem 15rem;  
   }
-}
 
+  h1::before {
+    top: 13rem;
+  }
+}
+/* --------------------------------------------------------max width 996px--------------------------------------------- */
 @media (max-width: 966px) {
   .denne-menu .menu-container { 
   padding: 3rem 5rem;  
   }
 
   /* --------------------------------------------------------max width 550px--------------------------------------------- */
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
   }
 
   .heading {
     padding-top: 12rem;
   }
+  
+  h1::before {
+    top: 23rem;
+  }
+  
 }
 /* -----------------------------------------------------max width 346px ------------------------------------------------- */
 

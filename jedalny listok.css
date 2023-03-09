@@ -31,14 +31,15 @@ html {
 .denne-menu .menu-container .item .item-name {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
   margin-top: 0.5rem;
   justify-content: center;
   animation: content-fade 4s;
 }
 
 .denne-menu .menu-container .item .item-menu {
-  padding: 1.5rem 0;
+  padding: 3rem 0;
   animation: content-fade 4s;
 }
 
@@ -48,7 +49,8 @@ h1::before {
   width: 100px;
   height: 3px;
   background-color: var(--light-color);
-  bottom: 76%;
+  /* bottom: 76%; */
+  top: 15rem;
   left: 50%;
   transform: translateX(-50%);
   animation: animate 4s linear infinite;
@@ -81,12 +83,29 @@ h1::before {
   float: right;
 }
 
+.denne-menu .menu-container .item .item-menu .slovak-price {
+  font-size: 2rem;
+  color: var(--light-color);
+  font-weight: 300;
+  /* display: inline-block; */
+  float: right;
+}
+
 .denne-menu .menu-container .item .item-menu h4 {
   font-size: 2rem;
-  color: #e5e5e5;
+  /* color: #e5e5e5; */
   font-weight: 400;
   display: contents;
   text-align: center;
+  color: var(--light-color);
+}
+
+.denne-menu .menu-container .item .item-name h5 {
+  position: absolute;
+  padding-top: 9rem;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #e5e5e5;
 }
 
 .denne-menu .menu-container .item .item-menu p {
@@ -112,6 +131,10 @@ h1::before {
 
 .denne-menu .menu-container .item .item-menu ul li a {
   color: #b9b9b9;
+}
+
+.denne-menu .menu-container .item .item-menu .english-menu {
+  color: #e5e5e5;
 }
 /* --------------------------------------------------------------jedalnu listok style ends  ------------------------------------------------------------------------------------------------ */
 
@@ -227,13 +250,23 @@ html {
   .denne-menu .menu-container { 
   padding: 3rem 15rem;  
   }
-}
 
+  h1::before {
+    top: 13rem;
+  }
+}
+/* --------------------------------------------------------max width 850px--------------------------------------------- */
 @media (max-width: 850px) {
   .denne-menu .menu-container { 
   padding: 3rem 5rem;  
   }
 
+  @media (max-width: 670px) {
+    .denne-menu .menu-container { 
+    padding: 3rem 1rem;  
+    }
+
+  }
 
 /* --------------------------------------------------------max width 550px--------------------------------------------- */
 @media (max-width: 550px) {
@@ -244,6 +277,9 @@ html {
   .heading {
     padding-top: 12rem;
   }
+
+  h1::before {
+    top: 23rem;
   }
 }
 /* -----------------------------------------------------max width 346px ------------------------------------------------- */

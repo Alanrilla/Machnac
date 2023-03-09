@@ -186,9 +186,56 @@ header .icons #menu {
 }
 /* --------------------------------------------------------------slider style end ------------------------------------------------------------------------------------------------ */
 
+/* --------------------------------------------------------------aktualne-informacie style start ------------------------------------------------------------------------------------------------ */
+
+.aktualne-informacie {
+  /* display: none; */
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-color);
+  text-align: center;
+
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+.aktualne-informacie .aktualne-informacie-content {
+  padding: 45px 16px 16px 16px;
+  max-width: 500rem;
+}
+
+.aktualne-informacie .aktualne-informacie-content .aktualne-informacie-text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+.aktualne-informacie-button {
+  cursor: pointer;
+  margin-left: 0.5rem 0.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  background-color: var(--light-color);
+  text-align: center;
+  color: #fff;
+}
+
+.ponuka-prace {
+  position: absolute;
+  background: var(--light-color);
+  margin-left: 61rem;
+}
+
+.ponuka-prace::before {
+  background: var(--black);
+}
+
+/* --------------------------------------------------------------aktualne-informacie style end ------------------------------------------------------------------------------------------------ */
+
 /* --------------------------------------------------------------WELCOME style starts ------------------------------------------------------------------------------------------------ */
 section {
-  padding: 8rem 9%;
+  padding: 5rem 9%;
 }
 
 .heading {
@@ -392,7 +439,9 @@ section {
 .reservation .form {
   background: #181818;
   width: 45%;
-  padding: 9rem 7%;
+  padding: 9rem;
+  padding-right: 9%;
+  padding-left: 2%;
 }
 
 .reservation .form h1 {
@@ -435,7 +484,7 @@ section {
 
 /* --------------------------------------------------------------Reservation style ends  ------------------------------------------------------------------------------------------------ */
 /* --------------------------------------------------------------akcie style starts  ------------------------------------------------------------------------------------------------ */
-.news .box-container .box {
+/* .news .box-container .box {
   background-color: #fff;
 }
 
@@ -457,7 +506,7 @@ section {
   position: absolute;
   right: 0;
   bottom: 0;
-}
+} */
 /* --------------------------------------------------------------akcie style ends  ------------------------------------------------------------------------------------------------ */
 
 /* --------------------------------------------------------------footer style starts  ------------------------------------------------------------------------------------------------ */
