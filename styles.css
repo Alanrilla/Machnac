@@ -5,6 +5,7 @@
   --light-color: #cdaa7c;
   --box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
+
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -32,14 +33,17 @@ body {
 }
 /* -------------------------------------------------------------------customer scrollbar start-------------------------------------- */
 
-div ::-webkit-scrollbar {
-  width: 12px;
+html::-webkit-scrollbar {
+  width: 1rem;
 }
-div::-webkit-scrollbar-track {
+
+html::-webkit-scrollbar-track {
   background: var(--black);
 }
-div::-webkit-scrollbar-thumb {
-  background: #cdaa7c;
+
+html::-webkit-scrollbar-thumb {
+  background: var(--light-color);
+  border-radius: 5rem;
 }
 /* --------------------------------------------------------------------customer scrollbar end-------------------------------------------------------------------- */
 
